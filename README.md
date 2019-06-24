@@ -30,6 +30,7 @@ A API armazena quatro informações principais sobre os planetas, três destes d
 Estas consultas utilizam o nome dos planetas como parâmetro, sendo assim as informações obtidas através da SWAPI sempre estarão corretas.
 Esta API não aceita nomes repetidos para os planetas inseridos.
 
-Observação
+Observações
 
 Antes de executar, verificar se o MongoDB se encontra instalado na máquina, e conectado em localhost, na porta 27017.
+Não esquecer de instalar os módulos necessários para a execução desta aplicação: "express", "mongoose", "got", etc.
