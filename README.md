@@ -2,7 +2,7 @@
 
 Autor: Leonardo de Figueiredo Meliande
 
-Proposta
+Proposta:
 
 Nossos associados são aficionados por Star Wars e com isso, queremos criar um jogo com algumas informações da franquia.
 Para possibilitar a equipe de front criar essa aplicação, queremos desenvolver uma API que contenha os dados dos planetas. 
@@ -29,7 +29,7 @@ Funcionalidades desejadas:
 Linguagens que usamos: Java, Go, Clojure, Node, Python
 Bancos que usamos: MongoDB, Cassandra, DynamoDB, Datomic
 
-Introdução
+Introdução:
 
 Esta API Rest foi criada com o objetivo de armazenar as informações de planetas da saga Star Wars.
 A mesma foi escrita em Node, com a utilização do framework Express e a base de dados MongoDB.
@@ -37,7 +37,7 @@ A API armazena quatro informações principais sobre os planetas, três destes d
 Estas consultas utilizam o nome dos planetas como parâmetro, sendo assim as informações obtidas através da SWAPI sempre estarão corretas.
 Esta API não aceita nomes repetidos para os planetas inseridos.
 
-Observações
+Observações:
 
 Antes de executar, verificar se o MongoDB se encontra instalado na máquina, e conectado em localhost, na porta 27017.
 Não esquecer de instalar os módulos necessários para a execução desta aplicação: "express", "mongoose", "got", etc.
