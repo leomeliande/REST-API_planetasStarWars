@@ -1,0 +1,26 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "Uma aplicação que guarda as informações de planetas de Star Wars.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "json"
+  ],
+  "author": "Leonardo Meliande",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "got": "^9.6.0",
+    "https": "^1.0.0",
+    "mongoose": "^5.6.0",
+    "node-fetch": "^2.6.0",
+    "query-string": "^6.8.0",
+    "swapi-node": "^0.4.4"
+  }
+}
