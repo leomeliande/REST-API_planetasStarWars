@@ -104,6 +104,10 @@ Para o caso de remoção de um planeta do banco de dados, deve-se realizar uma r
         
     http://localhost:8080/api/planetas/remover/id/5d10ca73d450281284bbbae8
 
+
+“Do. Or do not. There is no try.” - Yoda
+
+<IMG SRC="https://miro.medium.com/max/500/0*qFTabwOQbqE_sqhD.gif">
         
         
         
