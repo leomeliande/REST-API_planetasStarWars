@@ -46,3 +46,60 @@ Esta API não aceita nomes repetidos para os planetas inseridos.
 
 - Antes de executar, verificar se o MongoDB se encontra instalado na máquina, e conectado em <i>localhost</i>, na porta <i>27017</i>.
 - Não esquecer de instalar as dependências necessárias para a execução desta aplicação com a utilização do comando npm, por ex.: <i>npm install express --save</i>
+
+<b>4 - Funcionalidades implementadas:</b>
+
+<b><i>4.1 - Listar todos os planetas</b></i>
+
+Para listar todos os planetas presentes no banco de dados, o usuário deve realizar uma solicitação get para o endpoint /planetas/lista, da seguinte forma:
+        
+    http://localhost:8080/api/planetas/lista
+
+<b><i>4.2 - Adicionar um novo planeta</b></i>
+    
+Caso o usuário deseje adicionar um novo planeta na base de dados do sistema, ele deve realizar uma solicitação post para o endpoint /planetas/lista, e informar os seguintes dados em json:
+        
+    {
+        "nome": "Alderaan",
+        "clima": "temperate",
+        "terreno": "grasslands, mountains"
+    }
+        
+Desta forma será criado um novo planeta no banco de dados, tendo sua ID gerada automaticamente. A quantidade de aparições de cada planeta é obtida através da SWAPI, e tem seu valor padrão definido como 0 no código (caso um planeta não tenha aparecido em nenhum filme).
+
+<b><i>4.3 - Realizando busca por ID</b></i>
+    
+Para realizar a busca de um planeta por seu ID, o usuário deverá realizar uma requisição get no endpoint /planetas/busca/id/, junto com a ID que você deseja pesquisar:
+        
+    http://localhost:8080/api/planetas/busca/id/5d10ca73d450281284bbbae8
+        
+O exemplo acima irá retornar a seguinte informação:
+        
+    message	"Carregando detalhes do planeta..."
+    data	
+        aparicoes	"2"
+        _id	"5d10ca73d450281284bbbae8"
+        nome	"Alderaan"
+        clima	"temperate"
+        terreno	"grasslands, mountains"
+        create_date	"2019-06-24T13:04:51.977Z"
+        __v	0
+
+<b><i>4.4 - Realizando busca por nome</b></i>
+    
+Caso seja feita a busca por nome de um planeta, deve-se solicitar uma requisição post no endpoint /planetas/busca/nome/, seguido do nome do planeta a ser pesquisado. O nome não precisa ser exatamente idêntico (caso o usuário não saiba o nome exato do planeta, ou apenas parte dele), como por exemplo:
+        
+    http://localhost:8080/api/planetas/busca/nome/Alde, ou 
+    http://localhost:8080/api/planetas/busca/nome/Alderaan
+        
+Ambos irão retornar a informação exibida no tópico acima.
+        
+<b><i>4.5 - Deletar um planeta</b></i>
+    
+Para o caso de remoção de um planeta do banco de dados, deve-se realizar uma requisição delete para o endpoint /planetas/remover/id/, junto do ID do planeta que se deve deletar:
+        
+    http://localhost:8080/api/planetas/remover/id/5d10ca73d450281284bbbae8
+
+        
+        
+        
