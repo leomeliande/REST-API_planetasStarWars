@@ -39,10 +39,17 @@ Esta API não aceita nomes repetidos para os planetas inseridos.
 <b>2 - Tecnologia:</b>
 
 A API foi totalmente codificada em Node.js, em sua versão v10.16.0, com o auxílio do framework Express, e com a utilização da base de dados MongoDB, na versão v4.0.10. O editor de código escolhido foi o VS Code.
+
 <b>3 - Observações:</b>
 
-- Antes de executar, verificar se o MongoDB se encontra instalado na máquina, e conectado em <i>localhost</i>, na porta <i>27017</i>.
-- Não esquecer de instalar as dependências necessárias para a execução desta aplicação com a utilização do comando npm, por ex.: <i>npm install express --save</i>
+- Antes de executar, verificar se o MongoDB se encontra instalado na máquina, e conectado em:
+        
+        hostname: localhost
+        port: 27017
+        
+- Não esquecer de instalar as dependências necessárias para a execução desta aplicação com a utilização do comando npm, por ex.:
+
+        npm install express --save
 
 <b>4 - Funcionalidades implementadas:</b>
 
