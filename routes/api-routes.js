@@ -20,7 +20,9 @@ router.route('/planetas/lista')
     .post(planetaController.new);
 
 router.route('/planetas/busca/id/:planeta_id')
-    .get(planetaController.viewByID)
+    .get(planetaController.viewByID);
+
+router.route('/planetas/remover/id/:planeta_id')
     .delete(planetaController.delete);
 
 router.route('/planetas/busca/nome/:nome')
