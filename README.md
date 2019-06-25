@@ -1,10 +1,10 @@
 # REST-API_planetasStarWars
 
-Autor: Leonardo de Figueiredo Meliande
+<font size="30"><b>AUTOR: LEONARDO DE FIGUEIREDO MELIANDE - DESAFIO BACK-END AME DIGITAL</font></b>
 
-Proposta:
+<b>Proposta:</b>
 
-Nossos associados são aficionados por Star Wars e com isso, queremos criar um jogo com algumas informações da franquia.
+Nossos associados são aficionados por Star Wars e com isso, queremos criar um jogo com algumas informações da franquia.<br/>
 Para possibilitar a equipe de front criar essa aplicação, queremos desenvolver uma API que contenha os dados dos planetas. 
 
 Requisitos:
@@ -26,24 +26,23 @@ Funcionalidades desejadas:
 - Buscar por ID
 - Remover planeta
 
-Linguagens que usamos: Java, Go, Clojure, Node, Python
+Linguagens que usamos: Java, Go, Clojure, Node, Python<br/>
 Bancos que usamos: MongoDB, Cassandra, DynamoDB, Datomic
 
-Introdução:
+<b>1 - Introdução:</b>
 
-Esta API Rest foi criada com o objetivo de armazenar as informações de planetas da saga Star Wars.
+Esta API Rest foi criada com o objetivo de armazenar as informações de planetas da saga Star Wars.<br/>
+A API armazena quatro informações principais sobre os planetas, três destes devem ser inseridas manualmente, sendo eles nome, clima, terreno. A quarta é a quantidade de aparições em filmes, e esta é obtida dinamicamente através da API pública do Star Wars: https://swapi.co/api/planets.<br/>
+Estas consultas utilizam o nome dos planetas como parâmetro, sendo assim as informações obtidas através da SWAPI sempre estarão corretas.<br/>
+Esta API não aceita nomes repetidos para os planetas inseridos.
 
-Tecnologia:
+<b>2 - Tecnologia:</b>
 
 - Visual Studio Code
 - Node.js v10.16.0
 - MongoDB v4.0.10
 
-A API armazena quatro informações principais sobre os planetas, três destes devem ser inseridas manualmente, sendo eles nome, clima, terreno. A quarta é a quantidade de aparições em filmes, e esta é obtida dinamicamente através da API pública do Star Wars: https://swapi.co/api/planets.
-Estas consultas utilizam o nome dos planetas como parâmetro, sendo assim as informações obtidas através da SWAPI sempre estarão corretas.
-Esta API não aceita nomes repetidos para os planetas inseridos.
+<b>3 - Observações:</b>
 
-Observações:
-
-- Antes de executar, verificar se o MongoDB se encontra instalado na máquina, e conectado em localhost, na porta 27017.
-- Não esquecer de instalar as dependências necessárias para a execução desta aplicação com a utilização do comando npm, por ex.: npm install express --save
+- Antes de executar, verificar se o MongoDB se encontra instalado na máquina, e conectado em <i>localhost</i>, na porta <i>27017</i>.
+- Não esquecer de instalar as dependências necessárias para a execução desta aplicação com a utilização do comando npm, por ex.: <i>npm install express --save</i>
