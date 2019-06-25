@@ -35,9 +35,9 @@ Esta API Rest foi criada com o objetivo de armazenar as informações de planeta
 
 Tecnologia:
 
-Visual Studio Code
-Node.js v10.16.0
-MongoDB v4.0.10
+- Visual Studio Code
+- Node.js v10.16.0
+- MongoDB v4.0.10
 
 A API armazena quatro informações principais sobre os planetas, três destes devem ser inseridas manualmente, sendo eles nome, clima, terreno. A quarta é a quantidade de aparições em filmes, e esta é obtida dinamicamente através da API pública do Star Wars: https://swapi.co/api/planets.
 Estas consultas utilizam o nome dos planetas como parâmetro, sendo assim as informações obtidas através da SWAPI sempre estarão corretas.
