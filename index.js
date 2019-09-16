@@ -9,7 +9,7 @@ let express = require('express')
 // Importar Body parser
 let bodyParser = require('body-parser');
 // Importar Mongoose
-//let mongoose = require('mongoose');
+let mongoose = require('mongoose');
 
 // Inicializar aplicação
 let app = express();
@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({
  }));
 
  app.use(bodyParser.json());
-/*
+
 // Conecta ao Mongoose e define a variável de conexão
 mongoose.connect('mongodb://localhost/planetas', { 
     useNewUrlParser: true 
@@ -31,18 +31,7 @@ mongoose.connect('mongodb://localhost/planetas', {
     console.log('Banco de dados conectado');
 })
 
-mongoose.set('useCreateIndex', true)*/
-
-const MongoClient = require('mongodb').MongoClient;
-
-const uri = "mongodb+srv://leonardo:<89587264>@planetassw-1qeka.mongodb.net/test?retryWrites=true&w=majority";
-
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+mongoose.set('useCreateIndex', true)
 
 // Enviar mensagem para URL
 app.get('/', (req, res) => 
