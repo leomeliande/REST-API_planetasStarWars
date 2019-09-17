@@ -6,8 +6,6 @@ Em: 24/06/2019 as 10:22
 */
 
 const cors = require('cors');
-const path = require('path');
-
 
 // Importar express
 let express = require('express')
